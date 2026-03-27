@@ -33,3 +33,5 @@ def ucs(graph, start, goal):
                 heapq.heappush(pq, (new_cost, neigh))
 
     return None
+g = { "a": [("b", 1), ("c", 4)], "b": [("c", 2), ("d", 5)], "c": [("d", 1)], "d": [] }
+ucs(g,"a","d")
